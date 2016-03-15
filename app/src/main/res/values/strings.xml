@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="button_enter">Enter</string>
+
+    <string name="box">Box</string>
+    <string name="go_name">Go %s!</string>
+    <string name="hello_name">Hello %s.</string>
+    <string name="default_name">World</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

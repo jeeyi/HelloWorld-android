@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/output_message"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText android:id="@+id/enter_your_name"
+        android:hint="@string/enter_your_name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="125dp"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp" />
+
+    <Button
+        android:text="@string/button_enter"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp"
+        android:layout_marginTop="125dp"
+        android:layout_alignRight="@id/enter_your_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enter"/>
+
+</RelativeLayout>
