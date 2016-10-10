@@ -1,6 +1,7 @@
 package com.demo.helloworld;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class Main extends AppCompatActivity {
 
@@ -62,6 +65,12 @@ public class Main extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.enter_your_name);
         String yourName = editText.getText().toString();
         String myCompany =  getString(R.string.box);
+        Random random = new Random();
+        int count;
+
+        Resources res = getResources();
+        String line1;
+        String line2;
 
         if (yourName == null || yourName.length() == 0) {
             yourName = getString(R.string.default_name);
@@ -70,7 +79,10 @@ public class Main extends AppCompatActivity {
         if (myCompany.contentEquals(yourName)) {
             message = getString(R.string.go_name, yourName);
         } else {
-            message = getString(R.string.hello_name, yourName);
+            count =  random.nextInt(3);
+            line1 = String.format(getString(R.string.hello_name), yourName);
+            line2 = res.getQuantityString(R.plurals.number_of_songs, count, count);
+            message = String.format("%s\n%s", line1, line2);
         }
         recreate();
     }

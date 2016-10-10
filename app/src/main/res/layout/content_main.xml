@@ -21,21 +21,24 @@
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         android:textSize="20dp"
-        android:layout_marginTop="125dp"
         android:layout_height="wrap_content"
-        android:layout_width="250dp" />
+        android:layout_width="250dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="@string/button_enter"
         android:background="@android:color/black"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="20dp"
-        android:layout_marginTop="125dp"
-        android:layout_alignRight="@id/enter_your_name"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="1dp"
+        android:layout_marginTop="52dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="enter"/>
+        android:onClick="enter"
+        android:id="@+id/button"
+        android:layout_below="@+id/output_message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

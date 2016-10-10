@@ -1,12 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="enter_your_name">Enter Your Name</string>
-    <string name="button_enter">Enter</string>
+
+    <string name="app_name">헬로우 월드</string>
+    <string name="enter_your_name">이름을 입력하세요</string>
+    <string name="button_enter">입력</string>
 
     <string name="box">Box</string>
-    <string name="go_name">Go %s!</string>
-    <string name="hello_name">Hello %s.</string>
-    <string name="default_name">World</string>
+    <string name="go_name">%s 화이팅!</string>
+    <string name="hello_name">헬로우 %s.\n환영합니다!</string>
+    <string name="default_name">월드</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">설정</string>
+
+    <plurals name="number_of_songs">
+        <item quantity="one">%d개의 노래가 있습니다.</item>
+        <item quantity="other">%d개의 노래가 있습니다.</item>
+    </plurals>
 </resources>

@@ -1,12 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">HelloWorld</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="button_enter">Enter</string>
 
     <string name="box">Box</string>
     <string name="go_name">Go %s!</string>
-    <string name="hello_name">Hello %s.</string>
+    <string name="hello_name">Hello %s.\nWelcome back!</string>
     <string name="default_name">World</string>
 
     <string name="action_settings">Settings</string>
+
+    <plurals name="number_of_songs">
+        <item quantity="one">You have %d song today.</item>
+        <item quantity="other">You have %d songs today.</item>
+    </plurals>
 </resources>
